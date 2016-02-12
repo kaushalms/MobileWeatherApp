@@ -9,10 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/**
- * {@link ForecastAdapter} exposes a list of weather forecasts
- * from a {@link Cursor} to a {@link android.widget.ListView}.
- */
+
 public class ForecastAdapter extends CursorAdapter {
 
     private static final int VIEW_TYPE_COUNT = 2;
@@ -22,9 +19,7 @@ public class ForecastAdapter extends CursorAdapter {
     // Flag to determine if we want to use a separate view for "today".
     private boolean mUseTodayLayout = true;
 
-    /**
-     * Cache of the children views for a forecast list item.
-     */
+    
     public static class ViewHolder {
         public final ImageView iconView;
         public final TextView dateView;
